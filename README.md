@@ -1,6 +1,8 @@
 # arch-configs
 My configs for arch
 
+Should you want to use this config read everything carefully, or else somthing might explode.
+
 ## requirements
 
 ### Basics for displaying everything correctly:
