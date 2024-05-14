@@ -3,6 +3,23 @@ My configs for arch
 
 Should you want to use this config read everything carefully, or else something might explode.
 
+## credits
+### Artworks: 
+[https://twitter.com/Dino_illus](https://twitter.com/Dino_illus)
+Out of respect for the artist I am not including the artworks themselves in this repo, you will have to download them yourselve from Dino's Twitter/Pixiv
+Used artworks:
+  * [Wallpaper](https://twitter.com/Dino_illus/status/1708794113603125281/photo/1)
+  * [Rofi](https://twitter.com/Dino_illus/status/1686310368367296513) (Put it under .config/rofi/themes/dino_illus_twitter.jpeg)
+
+### Other
+The rofi theme is not made by me, but I sadly can't find whoever made this since it's been a while since pulled it. If you know where I took it from, please tell me so I can credit them!
+
+## screenshots
+
+![Basic](./images/basic.png)
+
+![rofi](./images/rofi.png)
+
 ## requirements
 
 ### Basics for displaying everything correctly:
