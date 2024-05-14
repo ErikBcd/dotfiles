@@ -24,7 +24,7 @@
 #       Look & Feel                                                                   #
 # ----------------------------------------------------------------------------------- #
 
-exec_always "killall polybar; /home/estugon/.config/polybar/launch.sh"
+exec_always "killall polybar; $HOME/.config/polybar/launch.sh"
 exec_always "feh --bg-fill --slideshow-delay 3600 /run/media/estugon/HDD/Images/wp/linux/Wallpaper/"
 exec_always --no-startup-id killall picom; picom --config $HOME/.config/picom/picom.conf -b
 
