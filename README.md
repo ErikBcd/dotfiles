@@ -1,7 +1,7 @@
 # arch-configs
 My configs for arch
 
-Should you want to use this config read everything carefully, or else somthing might explode.
+Should you want to use this config read everything carefully, or else something might explode.
 
 ## requirements
 
