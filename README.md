@@ -28,7 +28,7 @@ The rofi theme is not made by me, but I sadly can't find whoever made this since
  * i3wm
  * polybar
  * picom
- * feh
+ * feh (specify path to your wallpapers in .config/i3/services.i3conf)
  * rofi
 
 ### Further utility changed/mentioned by configs:
