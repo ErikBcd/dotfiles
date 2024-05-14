@@ -1,0 +1,51 @@
+# ------------------------------------------------------------------------
+# 
+# ███████╗███████╗████████╗██╗   ██╗ ██████╗  ██████╗ ███╗   ██╗███████╗
+# ██╔════╝██╔════╝╚══██╔══╝██║   ██║██╔════╝ ██╔═══██╗████╗  ██║██╔════╝
+# █████╗  ███████╗   ██║   ██║   ██║██║  ███╗██║   ██║██╔██╗ ██║███████╗
+# ██╔══╝  ╚════██║   ██║   ██║   ██║██║   ██║██║   ██║██║╚██╗██║╚════██║
+# ███████╗███████║   ██║   ╚██████╔╝╚██████╔╝╚██████╔╝██║ ╚████║███████║
+# ╚══════╝╚══════╝   ╚═╝    ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+#                                                                       
+#                         ██████╗ ██╗ ██████╗███████╗                   
+#                         ██╔══██╗██║██╔════╝██╔════╝                   
+#                         ██████╔╝██║██║     █████╗                     
+#                         ██╔══██╗██║██║     ██╔══╝                     
+#                         ██║  ██║██║╚██████╗███████╗                   
+#                         ╚═╝  ╚═╝╚═╝ ╚═════╝╚══════╝                   
+#                                                                       
+# Various i3 configs. 
+# Everything is split up into sub-modules for better readability.
+# =======================================================================
+# This file is for autostarts. 
+# =======================================================================
+
+# ----------------------------------------------------------------------------------- #
+#       Look & Feel                                                                   #
+# ----------------------------------------------------------------------------------- #
+
+exec_always "killall polybar; /home/estugon/.config/polybar/launch.sh"
+exec_always "feh --bg-fill --slideshow-delay 3600 /run/media/estugon/HDD/Images/wp/linux/Wallpaper/"
+exec_always --no-startup-id killall picom; picom --config $HOME/.config/picom/picom.conf -b
+
+# ----------------------------------------------------------------------------------- #
+#       Utility programs                                                              #
+# ----------------------------------------------------------------------------------- #
+
+# For starting up the kwallet for keyring stuff
+exec --no-startup-id /usr/lib/pam_kwallet_init
+exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1 
+exec_always --no-startup-id killall solaar; solaar --window=hide
+exec_always --no-startup-id killall redshift; killall redshift-gtk; redshift-gtk -l 54.32133:10.13489
+exec --no-startup-id discord
+exec_always --no-startup-id dunst
+
+# ----------------------------------------------------------------------------------- #
+#       Various sub commands                                                          #
+# ----------------------------------------------------------------------------------- #
+
+# Set better international keymap
+exec_always --no-startup-id "setxkbmap -layout us -variant altgr-intl"
+# Set mouse accel to flat
+exec_always --no-startup-id xinput set-prop "8" "libinput Accel Profile Enabled" 0 1 0
+
