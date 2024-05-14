@@ -34,3 +34,7 @@ Should you want to use this config read everything carefully, or else something 
 `sudo pacman -Sy i3wm polybar picom feh rofi vivaldi pavucontrol neovim ranger kitty`
 * Dependencies:
 `sudo pacman -Sy i3wm polybar picom feh rofi vivaldi pavucontrol neovim ranger kitty clangd python3 npm`
+
+## how to use
+Simply copy all configs to the appropiate directory on your system.
+Usually it's enough to copy `.config` to your home directory, e.g. `~/`
