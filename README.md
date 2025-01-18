@@ -8,6 +8,7 @@ Should you want to use this config read everything carefully, or else something 
 [https://twitter.com/Dino_illus](https://twitter.com/Dino_illus)
 
 Out of respect for the artist I am not including the artworks themselves in this repo, you will have to download them yourselve from Dino's Twitter/Pixiv
+
 Used artworks:
   * [Wallpaper](https://twitter.com/Dino_illus/status/1708794113603125281/photo/1)
   * [Rofi](https://twitter.com/Dino_illus/status/1686310368367296513) (Put it under .config/rofi/themes/dino_illus_twitter.jpeg)
